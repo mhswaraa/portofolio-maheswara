@@ -7,196 +7,210 @@
   <title>Portofolio</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
 <body>
+<!--=============== HEADER BARU ===============-->
 <header>
-  <div id="nav-background">
-    <div id="nav-container">
-      <header id="nav-header">
-        <h1><a href="#" id="nav-logo">PORTFOLIO</a></h1>
-        <div id="nav-menu-button">MENU
+    <!-- Navigasi "Pill & Bubble" untuk Desktop -->
+    <div id="nav-background">
+        <div id="nav-container">
+            <nav>
+                <ul class="nav-ul">
+                    <!-- Bubble akan ditambahkan oleh JavaScript -->
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      </header>
-      <nav>
-        <ul class="nav-ul hide-ul">
-          <li><a class="nav-link" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-        </ul>
-      </nav>
     </div>
-  </div>
+
+    <!-- Tombol Menu untuk Mobile -->
+    <div id="nav-menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </header>
 
   <main>
     <section id="home" class="hero">
-      <img src="assets/img/man (2).png" alt="Profil Image">
-      <h1>Welcome to <span>My Portfolio</span></h1>
-      <div class="separator"></div>
-      <a href="#" class="btn">Learn More</a>
-    </section>
+  <div class="hero-content">
+    <img src="assets/img/User.jpeg" alt="Foto Profil Maheswara" class="profile-picture">
+    <h1><span id="typed-output"></span></h1>
+    <p class="hero-subtitle">
+      Seorang Mahasiswa Sistem Informasi yang bersemangat dalam membangun aplikasi web yang modern dan intuitif.
+    </p>
+    <a href="#projects" class="btn">Lihat Proyek Saya</a>
+  </div>
+</section>
 
-    <section id="about" class="about">
-      <div class="about-container">
-        <div class="about-image">
-          <img src="assets/img/Pict1.jpeg" alt="Maheswara Wira Yoganata">
-        </div>
-        <section id="about" class="about">
-          <div class="about-content">
-            <h2 class="about-title">MY INTRODUCTION</h2>
-            <p class="about-description">
-              Perkenalkan, nama saya Maheswara Wira Yoganata. Saya dilahirkan di Yogyakarta pada tanggal 20 Oktober 1999. Saat ini, saya sedang menempuh program sarjana di Universitas Duta Bangsa Surakarta, dengan memilih Fakultas Sistem Informasi. <br>
-              <br> Minat saya dalam bidang teknologi informasi dimulai sejak masa SMA, awalnya melalui ketertarikan saya terhadap dunia game. Dari pengalaman tersebut, saya mulai mengembangkan minat yang lebih luas dalam IT. Setelah menyelesaikan SMA, saya memutuskan untuk memasuki dunia kerja karena keterbatasan finansial, tanpa melanjutkan pendidikan formal. Namun, ketika kesempatan untuk melanjutkan studi melalui jalur beasiswa muncul, saya memanfaatkannya untuk melanjutkan pendidikan sarjana saya di bidang Sistem Informasi. Di perguruan tinggi, saya mulai mengenal pemrograman pada semester pertama.
-            </p>
-            <br>
-            <h3>Programming Languages I Have Learned:</h3>
-            <div class="programming-languages">
-              <div class="language">
-                <img src="assets/img/icon/python.png" alt="Python">
-                <p>Python</p>
-              </div>
-              <div class="language">
-                <img src="assets/img/icon/php.png" alt="PHP">
-                <p>PHP</p>
-              </div>
-              <div class="language">
-                <img src="assets/img/icon/js.png" alt="JavaScript">
-                <p>JavaScript</p>
-              </div>
-              <div class="language">
-                <img src="assets/img/icon/visual-basic.png" alt="VB Net">
-                <p>VB Net</p>
-              </div>
-              <div class="language">
-                <img src="assets/img/icon/html-5.png" alt="Dart">
-                <p>HTML</p>
-              </div>
-              <div class="language">
-                <img src="assets/img/icon/css-3.png" alt="Dart">
-                <p>CSS</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <!-- Konten bagian projects -->
-      <section class="filters container">
-        <ul class="filters__content">
-          <li>
-            <button class="filters__button filter-tab-active" data-target="#projects">
-            Project
-          </button>
-        </li>
-      </ul>
-
-      <div class="filters__sections">
-        <!--=============== PROJECTS ===============-->
-        <div class="projects__content grid filters__active" data-content id="projects">
-          <article class="projects__card">
-            <a href="https://mhswaraa.github.io/PROJECT_https.svatiarchitect.com/">
-              <img src="assets/img/PROJECT1.jpg" alt="" class="projects__img" style="transition: transform 0.3s ease;">
-            </a>
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Web Static</span>
-                <h3 class="projects__title">Web Jadwal Perkuliahan</h3>
-                <a href="https://mhswaraa.github.io/PROJECT_https.svatiarchitect.com/" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <a href="https://mhswaraa.github.io/PROJECT_Happy-Eid-Mubarak/">
-              <img src="assets/img/PROJECT2.jpg" alt="" class="projects__img" style="transition: transform 0.3s ease;">
-            </a>
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Web Static</span>
-                <h3 class="projects__title">Web Jadwal Perkuliahan</h3>
-                <a href="https://mhswaraa.github.io/PROJECT_Happy-Eid-Mubarak/" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <a href="https://mhswaraa.github.io/PROJECT_JADWAL-CLASS/">
-              <img src="assets/img/PROJECT3.jpg" alt="" class="projects__img" style="transition: transform 0.3s ease;">
-            </a>
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Web Static</span>
-                <h3 class="projects__title">Web Jadwal Perkuliahan</h3>
-                <a href="https://mhswaraa.github.io/PROJECT_JADWAL-CLASS/" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-          <article class="projects__card">
-            <a href="https://mhswaraa.github.io/TUGAS_BlogClass-Kewarganegaraan/">
-              <img src="assets/img/PROJECT4.jpg" alt="" class="projects__img" style="transition: transform 0.3s ease;">
-            </a>
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Web Static</span>
-                <h3 class="projects__title">Web Jadwal Perkuliahan</h3>
-                <a href="https://mhswaraa.github.io/TUGAS_BlogClass-Kewarganegaraan/" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-          <div class="skills__content grid" data-content id="skills">
-          </div>
-        </div>
-      </section>
-    </section>
+   <section id="about" class="about">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="assets/img/Man.png" alt="Maheswara Wira Yoganata">
+    </div>
+    <div class="about-content">
+      <h2 class="about-title">TENTANG SAYA</h2>
+      <p class="about-description">
+        Perkenalkan, nama saya Maheswara Wira Yoganata. Saya dilahirkan di Yogyakarta pada tanggal 20 Oktober 1999. Saat ini, saya sedang menempuh program sarjana di Universitas Duta Bangsa Surakarta, dengan memilih Fakultas Sistem Informasi.
+        <br><br>
+        Minat saya dalam teknologi informasi dimulai sejak masa SMA. Dari pengalaman tersebut, saya mulai mengembangkan minat yang lebih luas dalam IT dan mengenal pemrograman pada semester pertama perkuliahan.
+      </p>
       
-      <!--=============== ASIDE ===============-->
-      <aside class="aside">
-        <div class="card-profile">
-          <article>
-            <h2 style="text-align: center">DEVELOPER</h2>
-            <br />
-            <center>
-              <img class="featured-image-index" src="assets/img/worker.gif" alt="Maheswara Wira Yoganata" />
-            </center>
-            <br />
-            <center>
-              <h3>Maheswara Wira Yoganata</h3>
-            </center>
-          </article>
-          <br />
-          <article>
-            <center>
-              <ul>
-                <li>
-                  <a href="https://instagram.com/mhswara.wira?igshid=NTc4MTIwNjQ2YQ==">
-                    <img class="featured-image-contact" src="assets/img/png-clipart-logo-instagram-history-social-network-brand-instagram-emblem-text-removebg-preview.png"
-                      alt="Instagram" />
-                  </a>
-                </li>
-              </ul>
-            </center>
-          </article>
+      <h3>Keahlian Saya</h3>
+      <div class="programming-languages">
+        <div class="language">
+          <img src="assets/img/icon/html-5.png" alt="HTML5">
+          <p>HTML5</p>
         </div>
-      </aside>
-    </section>
+        <div class="language">
+          <img src="assets/img/icon/css-3.png" alt="CSS3">
+          <p>CSS3</p>
+        </div>
+        <div class="language">
+          <img src="assets/img/icon/js.png" alt="JavaScript">
+          <p>JavaScript</p>
+        </div>
+        <div class="language">
+          <img src="assets/img/icon/php.png" alt="PHP">
+          <p>PHP</p>
+        </div>
+        <div class="language">
+          <img src="assets/img/icon/python.png" alt="Python">
+          <p>Python</p>
+        </div>
+        <div class="language">
+          <img src="assets/img/icon/visual-basic.png" alt="VB.Net">
+          <p>VB.Net</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="projects" class="projects-section">
+  <div class="projects-header">
+    <h2>Proyek Saya</h2>
+    <p>Berikut adalah beberapa proyek yang pernah saya kerjakan.</p>
+  </div>
+  
+  <div class="projects-grid">
+    <article class="project-card">
+      <a href="https://mhswaraa.github.io/PROJECT_https.svatiarchitect.com/" target="_blank" rel="noopener noreferrer" class="project-image-link">
+        <img src="assets/img/PROJECT1.jpg" alt="Proyek Website Arsitek" class="project-image">
+      </a>
+      <div class="project-content">
+        <p class="project-category">Web Statis</p>
+        <h3 class="project-title">The Svati Architect</h3>
+        <p class="project-description">
+          Sebuah landing page statis untuk firma arsitektur dan konstruksi, menampilkan desain yang modern dan bersih.
+        </p>
+        <div class="project-links">
+          <a href="https://mhswaraa.github.io/PROJECT_https.svatiarchitect.com/" target="_blank" rel="noopener noreferrer">Lihat Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <a href="https://mhswaraa.github.io/PROJECT_Happy-Eid-Mubarak/" target="_blank" rel="noopener noreferrer" class="project-image-link">
+        <img src="assets/img/PROJECT2.jpg" alt="Proyek Ucapan Idul Fitri" class="project-image">
+      </a>
+      <div class="project-content">
+        <p class="project-category">Desain Grafis</p>
+        <h3 class="project-title">Ucapan Idul Fitri</h3>
+        <p class="project-description">
+          Halaman ucapan digital sederhana untuk merayakan Hari Raya Idul Fitri 1444 H dengan desain visual yang menarik.
+        </p>
+        <div class="project-links">
+          <a href="https://mhswaraa.github.io/PROJECT_Happy-Eid-Mubarak/" target="_blank" rel="noopener noreferrer">Lihat Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <a href="https://mhswaraa.github.io/PROJECT_JADWAL-CLASS/" target="_blank" rel="noopener noreferrer" class="project-image-link">
+        <img src="assets/img/PROJECT3.jpg" alt="Proyek Jadwal Kelas" class="project-image">
+      </a>
+      <div class="project-content">
+        <p class="project-category">Web Statis</p>
+        <h3 class="project-title">Jadwal Kelas Digital</h3>
+        <p class="project-description">
+          Tampilan jadwal perkuliahan digital yang informatif dan mudah dibaca, dirancang dengan layout berbasis kartu.
+        </p>
+        <div class="project-links">
+          <a href="https://mhswaraa.github.io/PROJECT_JADWAL-CLASS/" target="_blank" rel="noopener noreferrer">Lihat Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <a href="https://mhswaraa.github.io/TUGAS_BlogClass-Kewarganegaraan/" target="_blank" rel="noopener noreferrer" class="project-image-link">
+        <img src="assets/img/PROJECT4.jpg" alt="Proyek Blog Kewarganegaraan" class="project-image">
+      </a>
+      <div class="project-content">
+        <p class="project-category">Web Statis</p>
+        <h3 class="project-title">Blog Kewarganegaraan</h3>
+        <p class="project-description">
+          Blog sederhana yang membahas tentang pengertian kewarganegaraan, dibuat sebagai tugas perkuliahan.
+        </p>
+        <div class="project-links">
+          <a href="https://mhswaraa.github.io/TUGAS_BlogClass-Kewarganegaraan/" target="_blank" rel="noopener noreferrer">Lihat Demo</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+      
+     <section id="contact" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2 class="contact-title">Mari Terhubung</h2>
+      <p class="contact-description">
+        Punya pertanyaan atau ide proyek? Saya akan senang mendengarnya dari Anda. Kirimkan saya email atau hubungi saya melalui salah satu media sosial di samping.
+      </p>
+      <a href="mailto:emailanda@example.com" class="contact-button">
+        <i class="fas fa-envelope"></i> Kirim Email
+      </a>
+    </div>
+
+    <div class="contact-socials">
+      <a href="https://instagram.com/mhswara.wira" target="_blank" rel="noopener noreferrer" class="social-card instagram">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+      <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="social-card whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="https://linkedin.com/in/usernameanda" target="_blank" rel="noopener noreferrer" class="social-card linkedin">
+        <i class="fab fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://threads.net/@mhswara.wira" target="_blank" rel="noopener noreferrer" class="social-card threads">
+        <i class="fab fa-threads"></i>
+        <span>Threads</span>
+      </a>
+      <a href="https://x.com/usernameanda" target="_blank" rel="noopener noreferrer" class="social-card twitter">
+        <i class="fab fa-twitter"></i>
+        <span>Twitter</span>
+      </a>
+    </div>
+  </div>
+</section>
   </main>
 
-  
-  <footer>
-    <p>&copy; 2023 My Portfolio. Created By Maheswara</p>
+  <footer class="footer">
+    <p>&copy; 2024 Maheswara Wira Yoganata. All Rights Reserved.</p>
   </footer>
 
   <script src="assets/js/script.js"></script>
   <script src="assets/js/about.js"></script>
+  <script src="assets/js/main.js"></script> 
 </body>
 
 </html>
